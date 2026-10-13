@@ -1,0 +1,37 @@
+{
+  "target": "boarding_count",
+  "unit": "city-route-hour",
+  "horizon": "one hour ahead",
+  "train_samples": 455520,
+  "validation_samples": 56940,
+  "test_samples": 56940,
+  "validation_mae": 0.4050932194788115,
+  "validation_rmse": 0.826462603024246,
+  "test_mae": 0.4028831508434508,
+  "test_rmse": 0.7936812169572116,
+  "test_r2": 0.8917717943436714,
+  "baseline_mae": 0.4250614682121531,
+  "baseline_rmse": 0.9922159282087132,
+  "training_seconds": 106.0118422440064,
+  "configuration": {
+    "n_estimators": 100,
+    "max_depth": 20,
+    "min_samples_leaf": 2,
+    "random_state": 42,
+    "n_jobs": 2,
+    "max_samples": 0.01,
+    "max_features": 0.5
+  },
+  "top_10_feature_importances": {
+    "numeric__board_lag_168": 0.5278108001348509,
+    "numeric__board_lag_24": 0.24384043739364153,
+    "numeric__board_lag_1": 0.09270456952370988,
+    "numeric__board_prev_24h_mean": 0.04997300237437116,
+    "numeric__hour": 0.021257142362095017,
+    "numeric__day_of_week": 0.01134394843543422,
+    "categorical__city_Tokyo": 0.00974973475297048,
+    "numeric__month": 0.009260291660813595,
+    "numeric__route_length_km": 0.007512540306404831,
+    "numeric__headway_min": 0.006487910268253218
+  }
+}
